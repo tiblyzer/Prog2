@@ -32,5 +32,3 @@ person.setNeptunCode("Akj5n6")
 print(person.getNeptunCode())
 
 #-----------------------------
-
-print(person)
