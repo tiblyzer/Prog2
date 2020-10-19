@@ -4,8 +4,8 @@
 A get kezdetű metódusok mindig a nevében szereplő adattagok értékével térnek vissza. A set kezdetű metódusok a paraméterként megkapott érték alapján mindig a nevükben szereplő adattagok értékét állítják be.
 Plusz pontért lássa el a beállító metódusokat típusellenőrzéssel, hogy csak megfelelő értéket fogadjanak el!
 2. Készítse el a Mercedes nevű osztályt a diagramban látható adattagok és metódusok alapján (konstruktor és lekérdező/beállító metódusok)!
-3. Implementálja a Car és a Mercedes osztályok \__str\__ metódusát!
-Az \__str\__ metódus mindig az adott osztály adattagjait adja vissza sztring-ként összekonkatenálva!
+3. Implementálja a Car és a Mercedes osztályok \_\_str\_\_ metódusát!
+Az \_\_str\_\_ metódus mindig az adott osztály adattagjait adja vissza sztring-ként összekonkatenálva!
 Írja felül a Mercedes osztályban a +, >= operátorokat úgy, hogy ár (originPrice) alapján az adott autó típus összehasonlíthatóvá, illetve összeadhatóvá váljon!
 4. Implementálja a CarHandler osztályt az UML diagram alapján az alábbiak szerint!
     - A konstruktor inicializálja a carList változót üres listaként!
