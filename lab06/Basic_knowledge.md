@@ -96,6 +96,28 @@ class F:
 		return self.valtozo + other.valtozo
 ```
 
+Példa összehasonlításra (public eset, sima értékvisszatérés):
+```
+class F:
+	def __init__(self,n):
+		self.valtozo = n
+	
+	def __gt__(self,other):
+		return self.valtozo > other.valtozo
+		
+	def __ge__(self,other):
+		return self.valtozo >= other.valtozo
+	
+	def __lt__(self,other):
+		return self.valtozo < other.valtozo
+		
+	def __le__(self,other):
+		return self.valtozo <= other.valtozo
+	
+	def __ne__(self,other):
+		return self.valtozo != other.valtozo
+```
+
 Példa összeadásra (public eset, osztály értékvisszatérés):
 ```
 class F:
