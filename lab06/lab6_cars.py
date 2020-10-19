@@ -66,25 +66,46 @@ class Mercedes(Car):
         return self._originPrice + other.getOriginPrice()
 
 
-carList = list()
-file = open('mercedes.txt')
+class CarHandler:
+    def __init__(self):
+        self.carList = list()
 
-for line in file:
-    splittedLine = line.split()
-    print(splittedLine)
-    vehicle = Mercedes(splittedLine)
-    carList.insert(carList.__len__(),vehicle)
+    def readCarData(self):
+        file = open('mercedes.txt')
 
-for element in carList:
-    print(element)
+        for line in file:
+            splittedLine = line.split()
+            print(splittedLine)
+            vehicle = Mercedes(splittedLine)
+            self.carList.insert(self.carList.__len__(), vehicle)
+    def printContent(self):
+        for element in self.carList:
+            print(element)
 
-sum = 0
+    def calculateReducePrice(self):
+        sum = 0
+        for element in self.carList:
+            sum += element.reducePrice()
 
-for element in carList:
-    sum += element.getOriginPrice()
-print(sum)
+        print(sum)
 
-sum = 0
-for element in carList:
-    sum += element.reducePrice()
-print(sum)
+
+carHandler = CarHandler()
+carHandler.readCarData()
+carHandler.printContent()
+carHandler.calculateReducePrice()
+
+#carList = list()
+
+
+#for element in carList:
+#    print(element)
+
+#sum = 0
+
+#for element in carList:
+#    sum += element.getOriginPrice()
+#print(sum)
+
+
+#print(sum)
